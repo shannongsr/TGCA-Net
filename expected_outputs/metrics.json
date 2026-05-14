@@ -1,0 +1,39 @@
+{
+  "model_name": "dual_tcn_gaf_attention",
+  "data_path": "data/processed/wide_minute_median.parquet",
+  "n_channels": 12,
+  "n_windows": 576,
+  "train_windows": 400,
+  "val_windows": 84,
+  "test_windows": 92,
+  "class_counts_all": {
+    "Normal": 321,
+    "Transition": 69,
+    "Anomaly": 186
+  },
+  "class_counts_train": {
+    "Normal": 222,
+    "Transition": 48,
+    "Anomaly": 130
+  },
+  "class_counts_val": {
+    "Normal": 44,
+    "Transition": 12,
+    "Anomaly": 28
+  },
+  "class_counts_test": {
+    "Normal": 55,
+    "Transition": 9,
+    "Anomaly": 28
+  },
+  "split_method": "blocked_random",
+  "epochs_requested": 100,
+  "epochs_trained": 31,
+  "best_epoch": 16,
+  "best_val_macro_f1": 0.9817619280247517,
+  "early_stopped": true,
+  "early_stopping_patience": 15,
+  "test_accuracy": 0.967391304347826,
+  "test_macro_f1": 0.9381941091260261,
+  "device": "cpu"
+}

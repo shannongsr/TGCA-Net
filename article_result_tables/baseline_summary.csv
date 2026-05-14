@@ -1,0 +1,12 @@
+run_name,model_name,representation,split_method,epochs_requested,epochs_trained,best_epoch,best_val_macro_f1,early_stopped,test_accuracy,test_macro_f1,train_windows,val_windows,test_windows
+baseline100_dual_tcn_gaf_attention,dual_tcn_gaf_attention,,blocked_random,100.0,31.0,16.0,0.9817619280247517,True,0.967391304347826,0.9381941091260261,400,84,92
+baseline100_gaf_cnn,gaf_cnn,,blocked_random,100.0,18.0,3.0,0.9525106133801785,True,0.9347826086956522,0.8957231040564374,400,84,92
+baseline100_cnn1d,cnn1d,,blocked_random,100.0,27.0,12.0,1.0,True,0.9456521739130435,0.8869457692987105,400,84,92
+baseline100_tcn,tcn,,blocked_random,100.0,31.0,16.0,1.0,True,0.9347826086956522,0.8707070707070708,400,84,92
+baseline100_gru,gru,,blocked_random,100.0,44.0,29.0,0.9223100311213853,True,0.8478260869565217,0.8041103848946985,400,84,92
+baseline100_gb_raw,gb,raw,blocked_random,,,,0.4957967494862694,False,0.8152173913043478,0.7406757192504747,400,84,92
+baseline100_knn_raw,knn,raw,blocked_random,,,,0.68960469592839,False,0.7065217391304348,0.641244327811492,400,84,92
+baseline100_rf_raw,rf,raw,blocked_random,,,,0.5160684963640628,False,0.7717391304347826,0.6357798165137615,400,84,92
+baseline100_mlp_raw,mlp,raw,blocked_random,100.0,31.0,31.0,0.7389115646258504,True,0.6956521739130435,0.5833333333333334,400,84,92
+baseline100_svm_raw,svm_rbf,raw,blocked_random,,449.0,449.0,0.6596865666633108,False,0.6521739130434783,0.5515016384581602,400,84,92
+baseline100_ridge_raw,ridge,raw,blocked_random,,,,0.47898622361904203,False,0.4673913043478261,0.44416152952738325,400,84,92

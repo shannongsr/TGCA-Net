@@ -1,0 +1,54 @@
+{
+  "split_method": "blocked_random",
+  "train_ratio": 0.7,
+  "val_ratio": 0.15,
+  "split_gap_windows": 0,
+  "split_gap_note": "Gap is measured between input-window start indices; inspect input and forecast ranges for prediction-horizon overlap.",
+  "subsets": [
+    {
+      "name": "train",
+      "n_windows": 400,
+      "class_counts": {
+        "Normal": 222,
+        "Transition": 48,
+        "Anomaly": 130
+      },
+      "input_start_min": "2023-08-16 00:00:00",
+      "input_end_max": "2023-08-16 10:15:00",
+      "forecast_start_min": "2023-08-16 00:30:00",
+      "forecast_end_max": "2023-08-16 11:15:00",
+      "history_minutes": 30,
+      "prediction_horizon_minutes": 60
+    },
+    {
+      "name": "val",
+      "n_windows": 84,
+      "class_counts": {
+        "Normal": 44,
+        "Transition": 12,
+        "Anomaly": 28
+      },
+      "input_start_min": "2023-08-16 00:04:00",
+      "input_end_max": "2023-08-16 10:19:00",
+      "forecast_start_min": "2023-08-16 00:34:00",
+      "forecast_end_max": "2023-08-16 11:19:00",
+      "history_minutes": 30,
+      "prediction_horizon_minutes": 60
+    },
+    {
+      "name": "test",
+      "n_windows": 92,
+      "class_counts": {
+        "Normal": 55,
+        "Transition": 9,
+        "Anomaly": 28
+      },
+      "input_start_min": "2023-08-16 00:08:00",
+      "input_end_max": "2023-08-16 10:03:00",
+      "forecast_start_min": "2023-08-16 00:38:00",
+      "forecast_end_max": "2023-08-16 11:03:00",
+      "history_minutes": 30,
+      "prediction_horizon_minutes": 60
+    }
+  ]
+}
