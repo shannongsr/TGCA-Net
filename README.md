@@ -68,6 +68,6 @@ Supplementary external-check dataset cited in the article:
 - Landing page: https://data.mendeley.com/datasets/5d7vbdp8f7/4
 - License: Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-## Suggested Data Availability Statement
+## Contact
 
-The source datasets used in this study are publicly available from the MDWTBM-LS data descriptor and the supplementary wind turbine blade vibration dataset listed above. The processed data, trained TGCA-Net checkpoint, cached result tables, and test script needed to reproduce the reported CSV outputs are available at: `<GitHub repository URL>`.
+For questions about this repository, please contact shirong.guo@monash.edu.
